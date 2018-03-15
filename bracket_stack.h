@@ -16,7 +16,8 @@ typedef struct stack_node_struct
 /**
  * A stack for storing teams in the NCAA March Madness bracket.
  */
-typedef struct bracket_stack_struct {
+typedef struct bracket_stack_struct
+{
     stack_node* head;
     int size;
 } bracket_stack;
