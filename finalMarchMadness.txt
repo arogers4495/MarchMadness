@@ -14,7 +14,6 @@ Nevada,27
 Texas,39
 Cincinnati,8
 Georgia State,60
-
 Xavier,4
 Texas Southern,68
 Missouri,32
@@ -31,7 +30,6 @@ Texas A&M,25
 Providence,35
 North Carolina,5
 Lipscomb,59
-
 Villanova,2
 Radford,65
 Virginia Tech,31
@@ -48,7 +46,6 @@ Arkansas,26
 Butler,33
 Purdue,7
 CSU Fullerton,61
-
 Kansas,3
 Penn,64
 Seton Hall,29
