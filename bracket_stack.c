@@ -14,9 +14,8 @@ void initialize(bracket_stack* s)
 void push(bracket_stack* s, char* name, int seed)
 {
     stack_node* node = (stack_node*) malloc(sizeof(stack_node));
-    team* t = (team*) malloc(sizeof(team));
-    strcpy(t->teamName, name);
-    t->seed = seed;
+    strcpy(node->t.teamName, name);
+    node->t.seed = seed;
 
     node->prev = s->head;
     s->head = node;
@@ -32,13 +31,13 @@ void pop(bracket_stack* s, team* t)
 
     stack_node* node = s->head;
     // Discard result if team is null.
-    if (t == NULL) {
-        strcpy(t->teamName, node->t->teamName);
-        t->seed = node->t->seed;
+    if (t != NULL) {
+        strcpy(t->teamName, node->t.teamName);
+        t->seed = node->t.seed;
     }
     s->head = node->prev;
-    free(node->t);
     free(node);
+    --s->size;
 }
 
 
@@ -49,8 +48,8 @@ void peek(bracket_stack* s, team* t)
     }
 
     stack_node* node = s->head;
-    strcpy(t->teamName, node->t->teamName);
-    t->seed = node->t->seed;
+    strcpy(t->teamName, node->t.teamName);
+    t->seed = node->t.seed;
 }
 
 

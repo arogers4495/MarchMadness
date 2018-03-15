@@ -8,7 +8,7 @@
 // Stack node for internal use.
 typedef struct stack_node_struct
 {
-    team* t;
+    team t;
     struct stack_node_struct* prev;
 } stack_node;
 
