@@ -16,6 +16,7 @@ void push(bracket_stack* s, char* name, int seed)
     stack_node* node = (stack_node*) malloc(sizeof(stack_node));
     team* t = (team*) malloc(sizeof(team));
     strcpy(t->teamName, name);
+    t->seed = seed;
 
     node->prev = s->head;
     s->head = node;
