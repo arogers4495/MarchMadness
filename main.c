@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+#include "team.h"
+#include "bracket_stack.h"
+#include "bracket.h"
+
+
 int main() {
     int i;
 

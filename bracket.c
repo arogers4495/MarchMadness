@@ -1,7 +1,8 @@
+#include <stddef.h>
 #include "bracket.h"
 
 
-void process_bracket_group(bracket_stack* s)
+team* process_bracket_group(bracket_stack* s)
 {
-
+    return NULL;
 }
