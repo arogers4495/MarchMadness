@@ -25,13 +25,31 @@ void push(bracket_stack* s, char* name, int seed)
 
 void pop(bracket_stack* s, team* t)
 {
+    if (is_empty(s)) {
+        return;
+    }
 
+    stack_node* node = s->head;
+    // Discard result if team is null.
+    if (t == NULL) {
+        strcpy(t->teamName, node->t->teamName);
+        t->seed = node->t->seed;
+    }
+    s->head = node->prev;
+    free(node->t);
+    free(node);
 }
 
 
 void peek(bracket_stack* s, team* t)
 {
-    
+    if (is_empty(s)) {
+        return;
+    }
+
+    stack_node* node = s->head;
+    strcpy(t->teamName, node->t->teamName);
+    t->seed = node->t->seed;
 }
 
 
