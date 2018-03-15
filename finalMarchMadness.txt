@@ -1,0 +1,67 @@
+Virginia,1
+UMBC,63
+Creighton,30
+Kansas St.,34
+Kentucky,17
+Davidson,48
+Arizona,16
+Buffalo,51
+Miami (Fla.),22
+Loyola Chicago,46
+Tennessee,10
+Wright State,57
+Nevada,27
+Texas,39
+Cincinnati,8
+Georgia State,60
+
+Xavier,4
+Texas Southern,68
+Missouri,32
+Florida,21
+Ohio St.,20
+South Dakota St.,49
+Gonzaga,15
+UNCG,52
+Houston,23
+San Diego State,45
+Michigan,11
+Montana,56
+Texas A&M,25
+Providence,35
+North Carolina,5
+Lipscomb,59
+
+Villanova,2
+Radford,65
+Virginia Tech,31
+Alabama,36
+West Virginia,18
+Murray State,50
+Wichita State,14
+Marshall,54
+Florida,21
+St. Bonaventure,42
+Texas Tech,12
+SFA,58
+Arkansas,26
+Butler,33
+Purdue,7
+CSU Fullerton,61
+
+Kansas,3
+Penn,64
+Seton Hall,29
+NC State,37
+Clemson,19
+New Mexico St.,47
+Auburn,13
+Charleston,53
+TCU,24
+Syracuse,44
+Michigan St.,9
+Bucknell,55
+Rhode Island,28
+Oklahoma,40
+Duke,6
+Iona,62
