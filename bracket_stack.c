@@ -60,6 +60,12 @@ bool is_empty(bracket_stack* s)
 }
 
 
+int size(bracket_stack* s)
+{
+    return s->size;
+}
+
+
 void free_stack(bracket_stack* s)
 {
     if (s == NULL || is_empty(s)) {

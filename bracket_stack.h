@@ -51,6 +51,11 @@ void peek(bracket_stack* s, team* t);
 bool is_empty(bracket_stack* s);
 
 /**
+ * Return the number of elements on the stack.
+ */
+int size(bracket_stack* s);
+
+/**
  * Free the internals of the stack, if they aren't null.
  */
 void free_stack(bracket_stack* s);
