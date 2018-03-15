@@ -12,11 +12,13 @@ int main() {
     }
 
     //iterate through the text & collect team name/seed
-    for (i = 0; i < 68; ++i) {
+    for (i = 0; i < 64; ++i) {
         //create temp variables for the scan here
         char teamName[50];
         int teamSeed;
-        fscanf(myFile, "%s,%d", teamName, &teamSeed);
+        fscanf(myFile, " %[^,],%d", teamName, &teamSeed);
+        printf("%d: %s, %d\n", i + 1,teamName, teamSeed);
     }
+    fclose(myFile);
     return 0;
 }
