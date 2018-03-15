@@ -26,4 +26,14 @@ void peek(bracket_stack* s, team* t);
 
 bool is_empty(bracket_stack* s);
 
+/**
+ * Free the internals of the stack, if they aren't null.
+ */
+void free_stack(bracket_stack* s);
+
+/**
+ * Free the internals of the stack and the stack itself.
+ */
+void free_stack_all(bracket_stack* s);
+
 #endif //MARCHMADNESS_BRACKET_STACK_H

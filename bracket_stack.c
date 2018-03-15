@@ -58,3 +58,28 @@ bool is_empty(bracket_stack* s)
 {
     return s->head == NULL;
 }
+
+
+void free_stack(bracket_stack* s)
+{
+    if (s == NULL || is_empty(s)) {
+        return;
+    }
+    stack_node* n = s->head;
+    while (n != NULL) {
+        stack_node* nf = n;
+        n = n->prev;
+        free(nf);
+    }
+    initialize(s);
+}
+
+
+void free_stack_all(bracket_stack* s)
+{
+    if (s == NULL) {
+        return;
+    }
+    free_stack(s);
+    free(s);
+}
