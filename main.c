@@ -63,5 +63,6 @@ int main() {
     printf("\n%25s\n%25s\n", "Finals:", "-------");
     team* champs = process_bracket_group(&final_group);
     printf("\nWinner Winner Chicken Dinner: %s\n", champs->teamName);
+    free(champs);
     return 0;
 }
