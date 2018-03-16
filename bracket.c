@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "bracket.h"
 
 
@@ -13,6 +14,7 @@ team* get_team()
 team* get_winner_free_loser(team* t1, team* t2)
 {
     team* winner = game(t1, t2);
+    printf("%20s vs %-20s Winner: %s\n", t1->teamName, t2->teamName, winner->teamName);
     if (t1 == winner) {
         free(t2);
     } else {
